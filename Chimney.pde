@@ -1,5 +1,5 @@
 import beads.*;
-
+//
 AudioContext ac;
 PImage bg;
 
@@ -54,7 +54,6 @@ public void setup() {
     }
   };
   numBackgrounds = imgFolder.list(jpgFilter).length;
-  //  bg = loadImage("imgs/background"+int(random(numBackgrounds)+1)+".jpg");
   smooth(); 
   frameRate(25);
   font = loadFont("fonts/SourceSansPro-ExtraLight-16.vlw");
@@ -79,13 +78,7 @@ void draw() {
   if ((millis() < 1100)&&(millis()>1000)) {
     freeze = true;
   }
- 
-// fetch sources in realtime
-//  if ((millis()-timeFromRefresh)>1000) {
-//    fetchSource();  // load all sound files
-//  }
 
-  //background(bg);
   background(0);
 
   _radiusnoise += 0.001;  // variate the radius of the fly
