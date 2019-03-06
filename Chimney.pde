@@ -56,7 +56,7 @@ public void setup() {
   numBackgrounds = imgFolder.list(jpgFilter).length;
   smooth(); 
   frameRate(25);
-  font = loadFont("fonts/SourceSansPro-ExtraLight-16.vlw");
+  font = loadFont("Source16.vlw");
   textSize(10);
   numeroFile = 0;
   fetchSource();

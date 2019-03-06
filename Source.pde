@@ -61,12 +61,12 @@ class Source {
     fill(c, 15);
     noStroke();
     if (!atom) {
-      fill(c, 10);
+      fill(c, 30);
       for (int i=1; i<=innerCircles; i++) {
         ellipse(x, y, r*i/innerCircles, r*i/innerCircles);
       }
     } else {
-      fill(c, 50);
+      fill(c, 100);
       ellipse(x, y, r, r);
     }
     
